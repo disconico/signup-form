@@ -532,10 +532,13 @@ select {
 
 .submit>button:hover {
   background-color: #97507F;
+  cursor: pointer;
+
 }
 
 .submit>button:active {
   background-color: #3D2E77;
+  cursor: pointer;
 }
 
 .log_in {
