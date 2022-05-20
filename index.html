@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sign-up form</title>
+    <link href="./images/icon.ico" rel="icon" type="image/x-icon" />
+    <title>運命の呼びかけ</title>
     <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/cef649e5b9.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="main-container" class="container">
         <div id="left-side">
@@ -16,57 +19,59 @@
         </div>
         <div id="right-side">
             <div id="banner">
-                <h1>あなたの運命へようこそ</h1>
+                <h1><strong>あなたの運命へようこそ</strong></h1>
                 <p>It's time to meet your destiny,
-                    register and chose your path between, Rōnin, Hatamoto and Shogun.</p>
+                    register and chose your path between, <strong>Rōnin</strong>, <strong>Hatamoto</strong> and <strong>Shogun</strong>.</p>
             </div>
-
-
             <form action="post" class="form">
                 <h2>Registration form</h1>
-                <div class="first_name">
-                    <label for="first_name">First name : </label><br>
-                    <input type="text" id="first_name" placeholder="Jane *" required>
-                </div>
-                <div class="last_name">
-                    <label for="last_name">Last name : </label><br>
-                    <input type="text" id="last_name" placeholder="Doe *" required>
-                </div>
-                <div class="email">
-                    <label for="email" id="email-label">E-mail address : </label><br>
-                    <input type="email" name="email" id="email" placeholder="janedoe@letsgo.com *" required>
-                </div>
-                <div class="phone">
-                    <label for="phone_number">Phone number : </label><br>
-                    <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number *" minlength="8" maxlength="14">
-                </div>
-                <div class="user_choice">
-                    <label for="user_choice">Chose your path : </label><br>
-                    <select name="user_choice" id="user_choice" required>
-                        <option value="A">Rōnin - $19</option>
-                        <option value="B">Hatamoto - $39</option>
-                        <option value="C">Shogun - $59</option>
-                    </select>
-                </div>
-                <div class="user_password">
-                    <label for="user_password">Password : </label><br>
-                    <input type="password" name="password" id="user_password" placeholder="8-20 characters *" minlength="8" maxlength="20" required class="error">
-                </div>
-                <div class="verify_password">
-                    <label for="verify_password">Confirm Password : </label><br>
-                    <input type="password" name="verify_password" id="verify_password" placeholder="8-20 characters *" minlength="8" maxlength="20" required class="error">
-                </div>
-                <div class="awesome">
-                    <label for="awesome">I confirm being awesome : 
-                    </label>
-                    <input type="checkbox" id="awesome" name="awesomeness" required>
-                </div>
-                <div class="submit">
-                    <button type="submit">Create account</button>
-                </div>
-                <div class="log_in">
-                    <p>Already have an account ? <strong><a href="https://theodinproject.com">Log in</a></strong></p>
-                </div>
+                    <div class="first_name">
+                        <label for="first_name">First name : </label><br>
+                        <input type="text" id="first_name" placeholder="Jane *" required>
+                    </div>
+                    <div class="last_name">
+                        <label for="last_name">Last name : </label><br>
+                        <input type="text" id="last_name" placeholder="Doe *" required>
+                    </div>
+                    <div class="email">
+                        <label for="email" id="email-label">E-mail address : </label><br>
+                        <input type="email" name="email" id="email" placeholder="janedoe@letsgo.com *" required>
+                    </div>
+                    <div class="phone">
+                        <label for="phone_number">Phone number : </label><br>
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number *"
+                            minlength="8" maxlength="14">
+                    </div>
+                    <div class="user_password">
+                        <label for="user_password">Create password : </label><br>
+                        <input type="password" name="password" id="user_password" placeholder="8-20 characters *"
+                        minlength="8" maxlength="20" required class="error">
+                    </div>
+                    <div class="verify_password">
+                        <label for="verify_password">Confirm password : </label><br>
+                        <input type="password" name="verify_password" id="verify_password"
+                        placeholder="8-20 characters *" minlength="8" maxlength="20" required class="error">
+                    </div>
+                    <div class="user_choice">
+                        <label for="user_choice">Chose your path : </label><br>
+                        <select name="user_choice" id="user_choice" required>
+                            <option value="A">Rōnin - $19</option>
+                            <option value="B">Hatamoto - $39</option>
+                            <option value="C">Shogun - $59</option>
+                        </select>
+                    </div>
+                    <div class="awesome">
+                        <label for="awesome">I confirm being awesome :
+                        </label>
+                        <input type="checkbox" id="awesome" name="awesomeness" required>
+                    </div>
+                    <div class="submit">
+                        <button type="submit">Create account</button>
+                    </div>
+                    <div class="log_in">
+                        <p>Already have an account ? <strong><a href="https://theodinproject.com">Log in</a></strong>
+                        </p>
+                    </div>
             </form>
         </div>
     </div>
@@ -77,4 +82,5 @@
         </a>
     </div>
 </body>
+
 </html>
